@@ -1,0 +1,12 @@
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Domain\bin\Debug\net7.0\Manga.Domain.deps.json
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Domain\bin\Debug\net7.0\Manga.Domain.dll
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Domain\bin\Debug\net7.0\Manga.Domain.pdb
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Domain\obj\Debug\net7.0\Manga.Domain.csproj.AssemblyReference.cache
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Domain\obj\Debug\net7.0\Manga.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Domain\obj\Debug\net7.0\Manga.Domain.AssemblyInfoInputs.cache
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Domain\obj\Debug\net7.0\Manga.Domain.AssemblyInfo.cs
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Domain\obj\Debug\net7.0\Manga.Domain.csproj.CoreCompileInputs.cache
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Domain\obj\Debug\net7.0\Manga.Domain.dll
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Domain\obj\Debug\net7.0\refint\Manga.Domain.dll
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Domain\obj\Debug\net7.0\Manga.Domain.pdb
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Domain\obj\Debug\net7.0\ref\Manga.Domain.dll

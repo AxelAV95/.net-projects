@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "MangaProject.Application.Interface/1.0.0": {
+        "dependencies": {
+          "MangaProject.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MangaProject.Application.Interface.dll": {}
+        }
+      },
+      "MangaProject.Domain/1.0.0": {
+        "runtime": {
+          "MangaProject.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MangaProject.Application.Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MangaProject.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

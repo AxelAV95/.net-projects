@@ -1,0 +1,5 @@
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Infrastructure\obj\Debug\net7.0\Manga.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Infrastructure\obj\Debug\net7.0\Manga.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Infrastructure\obj\Debug\net7.0\Manga.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Infrastructure\obj\Debug\net7.0\Manga.Infrastructure.AssemblyInfo.cs
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Infrastructure\obj\Debug\net7.0\Manga.Infrastructure.csproj.CoreCompileInputs.cache

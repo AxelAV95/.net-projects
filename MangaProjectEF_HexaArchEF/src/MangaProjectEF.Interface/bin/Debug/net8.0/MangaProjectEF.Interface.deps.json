@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "MangaProjectEF.Interface/1.0.0": {
+        "dependencies": {
+          "MangaProjectEF.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MangaProjectEF.Interface.dll": {}
+        }
+      },
+      "MangaProjectEF.Domain/1.0.0": {
+        "runtime": {
+          "MangaProjectEF.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MangaProjectEF.Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MangaProjectEF.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

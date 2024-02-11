@@ -1,0 +1,284 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.UseCase\\Manga.Application.UseCase.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.Dtos\\MangaProject.Application.Dtos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.Dtos\\MangaProject.Application.Dtos.csproj",
+        "projectName": "MangaProject.Application.Dtos",
+        "projectPath": "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.Dtos\\MangaProject.Application.Dtos.csproj",
+        "packagesPath": "C:\\Users\\AxelAV\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.Dtos\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\AxelAV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.Interface\\MangaProject.Application.Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.Interface\\MangaProject.Application.Interface.csproj",
+        "projectName": "MangaProject.Application.Interface",
+        "projectPath": "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.Interface\\MangaProject.Application.Interface.csproj",
+        "packagesPath": "C:\\Users\\AxelAV\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.Interface\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\AxelAV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Domain\\MangaProject.Domain.csproj": {
+                "projectPath": "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Domain\\MangaProject.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.UseCase\\Manga.Application.UseCase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.UseCase\\Manga.Application.UseCase.csproj",
+        "projectName": "Manga.Application.UseCase",
+        "projectPath": "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.UseCase\\Manga.Application.UseCase.csproj",
+        "packagesPath": "C:\\Users\\AxelAV\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.UseCase\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\AxelAV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.Dtos\\MangaProject.Application.Dtos.csproj": {
+                "projectPath": "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.Dtos\\MangaProject.Application.Dtos.csproj"
+              },
+              "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.Interface\\MangaProject.Application.Interface.csproj": {
+                "projectPath": "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Application.Interface\\MangaProject.Application.Interface.csproj"
+              },
+              "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Domain\\MangaProject.Domain.csproj": {
+                "projectPath": "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Domain\\MangaProject.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Domain\\MangaProject.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Domain\\MangaProject.Domain.csproj",
+        "projectName": "MangaProject.Domain",
+        "projectPath": "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Domain\\MangaProject.Domain.csproj",
+        "packagesPath": "C:\\Users\\AxelAV\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AxelAV\\source\\repos\\MangaProject\\src\\Manga.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\AxelAV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

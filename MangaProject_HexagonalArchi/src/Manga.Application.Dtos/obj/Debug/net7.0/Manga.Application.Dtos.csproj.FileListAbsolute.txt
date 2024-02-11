@@ -1,0 +1,12 @@
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Application.Dtos\bin\Debug\net7.0\Manga.Application.Dtos.deps.json
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Application.Dtos\bin\Debug\net7.0\Manga.Application.Dtos.dll
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Application.Dtos\bin\Debug\net7.0\Manga.Application.Dtos.pdb
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Application.Dtos\obj\Debug\net7.0\Manga.Application.Dtos.csproj.AssemblyReference.cache
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Application.Dtos\obj\Debug\net7.0\Manga.Application.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Application.Dtos\obj\Debug\net7.0\Manga.Application.Dtos.AssemblyInfoInputs.cache
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Application.Dtos\obj\Debug\net7.0\Manga.Application.Dtos.AssemblyInfo.cs
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Application.Dtos\obj\Debug\net7.0\Manga.Application.Dtos.csproj.CoreCompileInputs.cache
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Application.Dtos\obj\Debug\net7.0\Manga.Application.Dtos.dll
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Application.Dtos\obj\Debug\net7.0\refint\Manga.Application.Dtos.dll
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Application.Dtos\obj\Debug\net7.0\Manga.Application.Dtos.pdb
+C:\Users\AxelAV\source\repos\MangaProject\src\Manga.Application.Dtos\obj\Debug\net7.0\ref\Manga.Application.Dtos.dll

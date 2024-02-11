@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{45A46D39-40F9-4BCB-9E5C-9334BBEC35FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{82019A41-624A-4E60-A535-B44A2ECB8BB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{1DF9E019-E824-4EB9-A6FC-E04BA91D0AE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{9A7B94D3-8E18-445F-AB25-C9AE3E56A572}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{F8AD24E1-8F06-4EB0-A11D-94740DB05426}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaProjectEF.Domain", "src\MangaProjectEF.Domain\MangaProjectEF.Domain.csproj", "{9569F41E-B29E-48B5-B539-9B9A0C191A0A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaProjectEF.Infrastructure", "src\MangaProjectEF.Infrastructure\MangaProjectEF.Infrastructure.csproj", "{9E0FE03A-AAA6-457F-B104-2F34A53FD80E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaProjectEF.Persistence", "src\MangaProjectEF.Persistence\MangaProjectEF.Persistence.csproj", "{53FF383E-7152-4D2B-B232-252916F566A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaProjectEF.Dtos", "src\MangaProjectEF.Dtos\MangaProjectEF.Dtos.csproj", "{207E5F1A-8A68-4E34-A661-B71F787F0407}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaProjectEF.Interface", "src\MangaProjectEF.Interface\MangaProjectEF.Interface.csproj", "{1553ED0B-964B-4410-99AF-C98549112744}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaProjectEF.UseCase", "src\MangaProjectEF.UseCase\MangaProjectEF.UseCase.csproj", "{76FCB534-050E-4643-87D5-FCF3D7E0DBC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaProjectEF.Api", "src\MangaProjectEF.Api\MangaProjectEF.Api.csproj", "{004AA922-9A79-4F5B-985F-2F2477C00329}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaProjectEF.Utilities", "MangaProjectEF.Utilities\MangaProjectEF.Utilities.csproj", "{8B3AD41D-13DB-4039-92AD-E83A70AB8F14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9569F41E-B29E-48B5-B539-9B9A0C191A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9569F41E-B29E-48B5-B539-9B9A0C191A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9569F41E-B29E-48B5-B539-9B9A0C191A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9569F41E-B29E-48B5-B539-9B9A0C191A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E0FE03A-AAA6-457F-B104-2F34A53FD80E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E0FE03A-AAA6-457F-B104-2F34A53FD80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E0FE03A-AAA6-457F-B104-2F34A53FD80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E0FE03A-AAA6-457F-B104-2F34A53FD80E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53FF383E-7152-4D2B-B232-252916F566A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53FF383E-7152-4D2B-B232-252916F566A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53FF383E-7152-4D2B-B232-252916F566A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53FF383E-7152-4D2B-B232-252916F566A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{207E5F1A-8A68-4E34-A661-B71F787F0407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{207E5F1A-8A68-4E34-A661-B71F787F0407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{207E5F1A-8A68-4E34-A661-B71F787F0407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{207E5F1A-8A68-4E34-A661-B71F787F0407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1553ED0B-964B-4410-99AF-C98549112744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1553ED0B-964B-4410-99AF-C98549112744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1553ED0B-964B-4410-99AF-C98549112744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1553ED0B-964B-4410-99AF-C98549112744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76FCB534-050E-4643-87D5-FCF3D7E0DBC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76FCB534-050E-4643-87D5-FCF3D7E0DBC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76FCB534-050E-4643-87D5-FCF3D7E0DBC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76FCB534-050E-4643-87D5-FCF3D7E0DBC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{004AA922-9A79-4F5B-985F-2F2477C00329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{004AA922-9A79-4F5B-985F-2F2477C00329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{004AA922-9A79-4F5B-985F-2F2477C00329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{004AA922-9A79-4F5B-985F-2F2477C00329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3AD41D-13DB-4039-92AD-E83A70AB8F14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3AD41D-13DB-4039-92AD-E83A70AB8F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3AD41D-13DB-4039-92AD-E83A70AB8F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3AD41D-13DB-4039-92AD-E83A70AB8F14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9569F41E-B29E-48B5-B539-9B9A0C191A0A} = {82019A41-624A-4E60-A535-B44A2ECB8BB8}
+		{9E0FE03A-AAA6-457F-B104-2F34A53FD80E} = {1DF9E019-E824-4EB9-A6FC-E04BA91D0AE0}
+		{53FF383E-7152-4D2B-B232-252916F566A5} = {1DF9E019-E824-4EB9-A6FC-E04BA91D0AE0}
+		{207E5F1A-8A68-4E34-A661-B71F787F0407} = {45A46D39-40F9-4BCB-9E5C-9334BBEC35FF}
+		{1553ED0B-964B-4410-99AF-C98549112744} = {45A46D39-40F9-4BCB-9E5C-9334BBEC35FF}
+		{76FCB534-050E-4643-87D5-FCF3D7E0DBC3} = {45A46D39-40F9-4BCB-9E5C-9334BBEC35FF}
+		{004AA922-9A79-4F5B-985F-2F2477C00329} = {9A7B94D3-8E18-445F-AB25-C9AE3E56A572}
+		{8B3AD41D-13DB-4039-92AD-E83A70AB8F14} = {F8AD24E1-8F06-4EB0-A11D-94740DB05426}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB000AB6-034A-4D93-A8BF-E3959F1056D3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MangaProjectEF.Api.props" />
+</Project>
