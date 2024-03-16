@@ -1,14 +1,6 @@
 C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\bin\Debug\net8.0\Ventas.Application.deps.json
 C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\bin\Debug\net8.0\Ventas.Application.dll
 C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\bin\Debug\net8.0\Ventas.Application.pdb
-C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\Ventas.Application.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\Ventas.Application.AssemblyInfoInputs.cache
-C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\Ventas.Application.AssemblyInfo.cs
-C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\Ventas.Application.csproj.CoreCompileInputs.cache
-C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\Ventas.Application.dll
-C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\refint\Ventas.Application.dll
-C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\Ventas.Application.pdb
-C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\ref\Ventas.Application.dll
 C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\bin\Debug\net8.0\Ventas.Domain.dll
 C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\bin\Debug\net8.0\Ventas.Infrastructure.dll
 C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\bin\Debug\net8.0\Ventas.Utilities.dll
@@ -16,4 +8,12 @@ C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\bin\Debug\n
 C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\bin\Debug\net8.0\Ventas.Infrastructure.pdb
 C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\bin\Debug\net8.0\Ventas.Utilities.pdb
 C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\Ventas.Application.csproj.AssemblyReference.cache
+C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\Ventas.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\Ventas.Application.AssemblyInfoInputs.cache
+C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\Ventas.Application.AssemblyInfo.cs
+C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\Ventas.Application.csproj.CoreCompileInputs.cache
 C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\Ventas.Application.csproj.CopyComplete
+C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\Ventas.Application.dll
+C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\refint\Ventas.Application.dll
+C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\Ventas.Application.pdb
+C:\Users\AxelAV\source\repos\VentasProject\Ventas\Ventas.Application\obj\Debug\net8.0\ref\Ventas.Application.dll

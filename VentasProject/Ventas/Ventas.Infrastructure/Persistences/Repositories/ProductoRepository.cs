@@ -69,13 +69,21 @@ namespace Ventas.Infrastructure.Persistences.Repositories
 
         public async Task<bool> RemoveProducto(int productId)
         {
-            var product = _context.Productos.AsNoTracking().SingleOrDefaultAsync(x => x.Id.Equals(productId));
+            var product = await _context.Productos.SingleOrDefaultAsync(x => x.Id.Equals(productId));
 
-            _context.Update(product);
-            var recordsAffected = await _context.SaveChangesAsync();
-            return recordsAffected > 0;
-
-
+            if (product != null)
+            {
+                _context.Remove(product);
+                var recordsAffected = await _context.SaveChangesAsync();
+                return recordsAffected > 0;
+            }
+            else
+            {
+                // Manejar el caso donde el producto no existe
+                return false;
+            }
         }
+
+
     }
 }

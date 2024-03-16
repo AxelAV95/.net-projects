@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "5sCxbz7IJirbb5nW033Ezuzh0X7MJdsxezHC4KTlNvdVn42/JquKj3+uq5+IqruSiRgxuwOrSsH1aBOxSKrrkw==",
+  "dgSpecHash": "USXBuBKP+leFeO6Tnh5x1Mle5taHO1X2KIwkfd7Q4FtG/oDCkoW3u6Xh3TcqqH/+0qItthU3ZhPghvI1pqT5yg==",
   "success": true,
   "projectFilePath": "C:\\Users\\AxelAV\\source\\repos\\VentasProject\\Ventas\\Ventas.Application\\Ventas.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\AxelAV\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\AxelAV\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\AxelAV\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\AxelAV\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\AxelAV\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\AxelAV\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\AxelAV\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\AxelAV\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\AxelAV\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.4\\microsoft.data.sqlclient.5.1.4.nupkg.sha512",

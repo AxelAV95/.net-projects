@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "OmJMelycOjGERFb+TspiCiAdQgUEJEwdvlCYdOVktBrxpwE3mqqnP/XvNe5cAkyxMQkGYlLp+5Rta42FforrwQ==",
+  "dgSpecHash": "156XNA0Zq8eNj5Db/8eeQecmRK3g8N7QFZ1vhrMbLoiB6fp0ofbcAjUDCA610y0pqUtDspAZNFBgovIKgmG/mw==",
   "success": true,
   "projectFilePath": "C:\\Users\\AxelAV\\source\\repos\\VentasProject\\Ventas\\Ventas.Test\\Ventas.Test.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\AxelAV\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\AxelAV\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\AxelAV\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\AxelAV\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\AxelAV\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\AxelAV\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\AxelAV\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\AxelAV\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\AxelAV\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",
     "C:\\Users\\AxelAV\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
