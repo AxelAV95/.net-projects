@@ -13,6 +13,6 @@ RUN dotnet publish "TodoApi.csproj" -c Release -o /app/publish
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 COPY --from=publish /app/publish .
-EXPOSE 5184 5185
-ENV ASPNETCORE_URLS="http://+:5185;https://+:5184"
+EXPOSE 5185
+ENV ASPNETCORE_URLS="http://+:5185" # Solo HTTP
 ENTRYPOINT ["dotnet", "TodoApi.dll"]
