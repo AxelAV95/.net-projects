@@ -1,5 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// Agregar servicios
 builder.Services.AddControllers();
 builder.Services.AddCors(options =>
 {
@@ -9,9 +10,14 @@ builder.Services.AddCors(options =>
     });
 });
 
+// Configurar Kestrel para solo HTTP
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(5185); // Escucha en cualquier IP, puerto 5185 (HTTP)
+});
+
 var app = builder.Build();
 
-// app.UseHttpRedirection(); // Cambia de UseHttpsRedirection a UseHttpRedirection
 app.UseCors("AllowAll");
 app.UseAuthorization();
 app.MapControllers();
