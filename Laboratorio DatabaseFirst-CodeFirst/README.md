@@ -68,7 +68,7 @@
 3. **Genera modelos desde la base de datos:**
    Usa el comando `scaffold` para crear el contexto y los modelos:
    ```bash
-   dotnet ef dbcontext scaffold "Server=(localdb)\\MSSQLLocalDB;Database=LabDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models
+   dotnet ef dbcontext scaffold "Server=LAPTOP-FF6SODJH\SQLEXPRESS01;Database=LabDB;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models
    ```
    - Esto genera:
      - Carpeta `Models`.
