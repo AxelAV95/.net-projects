@@ -251,3 +251,141 @@ dotnet run
 
 ---
 
+### Pasos extras para experimentar
+
+En el enfoque **Code First** con Entity Framework Core, cualquier cambio en el modelo (como agregar, modificar o eliminar un campo) requiere que generes una nueva migración para reflejar ese cambio en la base de datos. Si eliminas un campo del modelo y quieres que ese cambio se aplique a la tabla correspondiente, debes crear una nueva migración y aplicarla. Te explico cómo hacerlo paso a paso en el contexto de tu laboratorio.
+
+---
+
+### **Escenario: Eliminar un campo del modelo**
+Supongamos que quieres eliminar el campo `Stock` del modelo `Producto` y actualizar la base de datos para que la columna `Stock` también sea eliminada de la tabla `Productos`.
+
+#### **Paso 1: Estado actual**
+Asumimos que ya tienes:
+- La migración `InitialCreate` registrada (refleja `Id`, `Nombre`, `Precio`).
+- La migración `AddStockToProducto` aplicada (agregó la columna `Stock`).
+- El modelo actual con:
+  ```csharp
+  namespace LabEFCore.Models;
+  public partial class Producto
+  {
+      public int Id { get; set; }
+      public string Nombre { get; set; }
+      public decimal Precio { get; set; }
+      public int Stock { get; set; }
+  }
+  ```
+
+#### **Paso 2: Modificar el modelo**
+Elimina el campo `Stock` del modelo `Producto.cs`:
+```csharp
+namespace LabEFCore.Models;
+public partial class Producto
+{
+    public int Id { get; set; }
+    public string Nombre { get; set; }
+    public decimal Precio { get; set; }
+}
+```
+
+#### **Paso 3: Generar una nueva migración**
+1. **Crea la migración:**
+   En la terminal, ejecuta:
+   ```bash
+   dotnet ef migrations add RemoveStockFromProducto
+   ```
+   Esto generará un nuevo archivo en la carpeta `Migrations` (por ejemplo, `20250321030000_RemoveStockFromProducto.cs`).
+
+2. **Revisa el contenido de la migración:**
+   Abre el archivo generado y verifica que contenga algo como:
+   ```csharp
+   protected override void Up(MigrationBuilder migrationBuilder)
+   {
+       migrationBuilder.DropColumn(
+           name: "Stock",
+           table: "Productos");
+   }
+
+   protected override void Down(MigrationBuilder migrationBuilder)
+   {
+       migrationBuilder.AddColumn<int>(
+           name: "Stock",
+           table: "Productos",
+           type: "int",
+           nullable: false,
+           defaultValue: 0);
+   }
+   ```
+   - `Up`: Elimina la columna `Stock`.
+   - `Down`: La restaura si revierte la migración.
+
+#### **Paso 4: Aplicar la migración**
+Ejecuta:
+```bash
+dotnet ef database update
+```
+Esto eliminará la columna `Stock` de la tabla `Productos` en la base de datos.
+
+#### **Paso 5: Verificar el cambio**
+1. **Prueba en código:**
+   Modifica `Program.cs` para asegurarte de que funciona sin `Stock`:
+   ```csharp
+   using LabEFCore.Models;
+   using Microsoft.EntityFrameworkCore;
+
+   class Program
+   {
+       static void Main(string[] args)
+       {
+           using (var db = new LabDbContext())
+           {
+               db.Productos.Add(new Producto { Nombre = "Monitor", Precio = 199.99M });
+               db.SaveChanges();
+
+               var productos = db.Productos.ToList();
+               foreach (var p in productos)
+               {
+                   Console.WriteLine($"ID: {p.Id}, Nombre: {p.Nombre}, Precio: {p.Precio}");
+               }
+           }
+       }
+   }
+   ```
+   Ejecuta:
+   ```bash
+   dotnet run
+   ```
+
+2. **Verifica en la base de datos:**
+   En SSMS, ejecuta:
+   ```sql
+   SELECT * FROM Productos;
+   ```
+   Confirma que la columna `Stock` ya no existe.
+
+---
+
+### **Notas importantes**
+- **Nueva migración por cada cambio:** Cada vez que modifiques el modelo (agregar, eliminar o cambiar propiedades), debes generar una nueva migración con `dotnet ef migrations add <Nombre>` y aplicarla con `dotnet ef database update`.
+- **Reversión:** Si necesitas deshacer la eliminación de `Stock`, usa:
+  ```bash
+  dotnet ef database update AddStockToProducto
+  ```
+  Esto revertirá a la migración anterior y restaurará la columna `Stock`.
+- **Datos existentes:** Al eliminar una columna, los datos que había en ella se perderán irreversiblemente a menos que hagas un respaldo manual antes de aplicar la migración (por ejemplo, exportando los datos con un script SQL).
+
+---
+
+### **¿Qué pasa si no creas una migración?**
+Si eliminas el campo `Stock` del modelo pero no generas y aplicas una migración, el modelo y la base de datos quedarán desincronizados. Esto puede causar errores en tiempo de ejecución, como excepciones al intentar mapear datos de una columna que ya no está en el modelo.
+
+---
+
+### **Resumen**
+Para eliminar un campo del modelo:
+1. Modifica el modelo eliminando el campo.
+2. Genera una nueva migración con `dotnet ef migrations add`.
+3. Aplica la migración con `dotnet ef database update`.
+
+
+
