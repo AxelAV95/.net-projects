@@ -113,7 +113,7 @@
    {
        static void Main(string[] args)
        {
-           using (var db = new LabDBContext())
+           using (var db = new LabDbContext())
            {
                var productos = db.Productos.ToList();
                foreach (var p in productos)
@@ -206,7 +206,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        using (var db = new LabDBContext())
+        using (var db = new LabDbContext())
         {
             db.Productos.Add(new Producto { Nombre = "Teclado", Precio = 45.99M, Stock = 10 });
             db.SaveChanges();
