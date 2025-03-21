@@ -253,7 +253,7 @@ dotnet run
 
 ### Pasos extras para experimentar
 
-En el enfoque **Code First** con Entity Framework Core, cualquier cambio en el modelo (como agregar, modificar o eliminar un campo) requiere que generes una nueva migración para reflejar ese cambio en la base de datos. Si eliminas un campo del modelo y quieres que ese cambio se aplique a la tabla correspondiente, debes crear una nueva migración y aplicarla. Te explico cómo hacerlo paso a paso en el contexto de tu laboratorio.
+En el enfoque **Code First** con Entity Framework Core, cualquier cambio en el modelo (como agregar, modificar o eliminar un campo) requiere que generes una nueva migración para reflejar ese cambio en la base de datos. Si eliminas un campo del modelo y quieres que ese cambio se aplique a la tabla correspondiente, debes crear una nueva migración y aplicarla. 
 
 ---
 
