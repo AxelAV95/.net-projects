@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\BlogBackend\\Blog.Application\\Blog.Application.csproj": {}
+    "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\BlogBackend\\Blog.Application\\Blog.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\BlogBackend\\Blog.Application\\Blog.Application.csproj": {
+    "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\BlogBackend\\Blog.Application\\Blog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\BlogBackend\\Blog.Application\\Blog.Application.csproj",
+        "projectUniqueName": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\BlogBackend\\Blog.Application\\Blog.Application.csproj",
         "projectName": "Blog.Application",
-        "projectPath": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\BlogBackend\\Blog.Application\\Blog.Application.csproj",
+        "projectPath": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\BlogBackend\\Blog.Application\\Blog.Application.csproj",
         "packagesPath": "C:\\Users\\andra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\BlogBackend\\Blog.Application\\obj\\",
+        "outputPath": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\BlogBackend\\Blog.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\BlogBackend\\Blog.Domain\\Blog.Domain.csproj": {
-                "projectPath": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\BlogBackend\\Blog.Domain\\Blog.Domain.csproj"
+              "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\BlogBackend\\Blog.Domain\\Blog.Domain.csproj": {
+                "projectPath": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\BlogBackend\\Blog.Domain\\Blog.Domain.csproj"
               }
             }
           }
@@ -65,6 +65,10 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.5.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.10.0, )"
             }
           },
           "imports": [
@@ -87,14 +91,14 @@
         }
       }
     },
-    "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\BlogBackend\\Blog.Domain\\Blog.Domain.csproj": {
+    "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\BlogBackend\\Blog.Domain\\Blog.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\BlogBackend\\Blog.Domain\\Blog.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\BlogBackend\\Blog.Domain\\Blog.Domain.csproj",
         "projectName": "Blog.Domain",
-        "projectPath": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\BlogBackend\\Blog.Domain\\Blog.Domain.csproj",
+        "projectPath": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\BlogBackend\\Blog.Domain\\Blog.Domain.csproj",
         "packagesPath": "C:\\Users\\andra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\BlogBackend\\Blog.Domain\\obj\\",
+        "outputPath": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\BlogBackend\\Blog.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

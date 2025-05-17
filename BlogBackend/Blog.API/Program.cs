@@ -1,5 +1,11 @@
+using System.Text;
+using Blog.Domain.Configuration;
 using FluentValidation;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,7 +31,53 @@ builder.Services.AddCors(options =>
     });
 });
 
-// JWT Config aquí después
+// JWT Config
+var jwtSettings = builder.Configuration.GetSection("JwtSettings").Get<JwtSettings>()
+                   ?? throw new ArgumentNullException(nameof(JwtSettings), "JwtSettings configuration missing.");
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = jwtSettings.Issuer,
+        ValidAudience = jwtSettings.Audience,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.SecretKey))
+    };
+});
+
+builder.Services.AddScoped<ITokenService, TokenService>();
+
+//Redis service
+builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
+{
+    var configuration = builder.Configuration.GetConnectionString("Redis")
+                        ?? throw new ArgumentNullException("Redis connection string not found");
+    return ConnectionMultiplexer.Connect(configuration);
+});
+
+builder.Services.AddScoped<ICacheService, RedisCacheService>();
+
+builder.Services.AddControllers()
+    .AddMvcOptions(options =>
+    {
+        options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+    });
+
+builder.Services.AddAntiforgery(options =>
+{
+    options.HeaderName = "X-CSRF-TOKEN";
+});
+
+
 // FluentValidation, AutoMapper, MediatR también aquí después
 
 
@@ -36,6 +88,8 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+app.UseAuthentication();
+app.UseAuthorization();
 
 // Middleware básico de sanitización (libería recomendada: Ganss.XSS si se requiere después)
 app.UseHttpsRedirection();
