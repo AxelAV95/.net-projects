@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "eIRHI8/wLL12dSDC3QP7ISuIL6sAqLBzJuXmIYMvpZg=",
+  "Source": "Blog.API",
+  "BasePath": "_content/Blog.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

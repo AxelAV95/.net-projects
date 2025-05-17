@@ -1,0 +1,15 @@
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Application\bin\Debug\net9.0\Blog.Application.deps.json
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Application\bin\Debug\net9.0\Blog.Application.dll
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Application\bin\Debug\net9.0\Blog.Application.pdb
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Application\bin\Debug\net9.0\Blog.Domain.dll
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Application\bin\Debug\net9.0\Blog.Domain.pdb
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Application\obj\Debug\net9.0\Blog.Application.csproj.AssemblyReference.cache
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Application\obj\Debug\net9.0\Blog.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Application\obj\Debug\net9.0\Blog.Application.AssemblyInfoInputs.cache
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Application\obj\Debug\net9.0\Blog.Application.AssemblyInfo.cs
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Application\obj\Debug\net9.0\Blog.Application.csproj.CoreCompileInputs.cache
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Application\obj\Debug\net9.0\Blog.App.C7D7B2EA.Up2Date
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Application\obj\Debug\net9.0\Blog.Application.dll
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Application\obj\Debug\net9.0\refint\Blog.Application.dll
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Application\obj\Debug\net9.0\Blog.Application.pdb
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Application\obj\Debug\net9.0\ref\Blog.Application.dll

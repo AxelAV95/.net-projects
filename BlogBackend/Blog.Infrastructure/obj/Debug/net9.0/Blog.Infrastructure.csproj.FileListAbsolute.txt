@@ -1,0 +1,17 @@
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\bin\Debug\net9.0\Blog.Infrastructure.deps.json
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\bin\Debug\net9.0\Blog.Infrastructure.runtimeconfig.json
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\bin\Debug\net9.0\Blog.Infrastructure.dll
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\bin\Debug\net9.0\Blog.Infrastructure.pdb
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\bin\Debug\net9.0\Blog.Domain.dll
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\bin\Debug\net9.0\Blog.Domain.pdb
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\obj\Debug\net9.0\Blog.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\obj\Debug\net9.0\Blog.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\obj\Debug\net9.0\Blog.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\obj\Debug\net9.0\Blog.Infrastructure.AssemblyInfo.cs
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\obj\Debug\net9.0\Blog.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\obj\Debug\net9.0\Blog.Inf.4FB8A09A.Up2Date
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\obj\Debug\net9.0\Blog.Infrastructure.dll
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\obj\Debug\net9.0\refint\Blog.Infrastructure.dll
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\obj\Debug\net9.0\Blog.Infrastructure.pdb
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\obj\Debug\net9.0\Blog.Infrastructure.genruntimeconfig.cache
+C:\Users\andra\Desktop\Proyectos\Dotnet\BlogBackend\Blog.Infrastructure\obj\Debug\net9.0\ref\Blog.Infrastructure.dll
