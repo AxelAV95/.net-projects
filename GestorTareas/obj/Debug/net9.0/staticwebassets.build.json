@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+o8L2IztW6WYCwJniRn/TQt+6nrMmtl1sgcs9VKB2ns=",
+  "Hash": "eI0Z6KfIW+Y4h77i+M+WamPZA8fugwXTFVihpadOL30=",
   "Source": "GestorTareas",
   "BasePath": "_content/GestorTareas",
   "Mode": "Default",
@@ -2390,6 +2390,27 @@
       "OriginalItemSpec": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\fnusmys8lk-jguk1nb7qu.gz",
+      "SourceId": "GestorTareas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/GestorTareas",
+      "RelativePath": "js/tareas#[.{fingerprint=jguk1nb7qu}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\wwwroot\\js\\tareas.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "re3ri386yc",
+      "Integrity": "A4jQg6hGOT5f+i109uqvin3j2G+c60jllL41IJZ4i6s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\wwwroot\\js\\tareas.js"
+    },
+    {
       "Identity": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\foz4gmzmdx-pj5nd1wqec.gz",
       "SourceId": "GestorTareas",
       "SourceType": "Discovered",
@@ -3923,12 +3944,12 @@
       "OriginalItemSpec": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\zdqb6p2oau-b9sayid5wm.gz",
+      "Identity": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\zdqb6p2oau-t3pkja1575.gz",
       "SourceId": "GestorTareas",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/GestorTareas",
-      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=t3pkja1575}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -3937,8 +3958,8 @@
       "RelatedAsset": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "0suozzrugb",
-      "Integrity": "0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=",
+      "Fingerprint": "l3qiyn3lm4",
+      "Integrity": "oeKX4+9lWsEl38ibPXUCEwRDiR1B5DnZduuo7keCu7o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\wwwroot\\css\\site.css"
@@ -4042,8 +4063,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9sayid5wm",
-      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
+      "Fingerprint": "t3pkja1575",
+      "Integrity": "55juYkRLmR/kMZzhBGFdKY4qfgsgE/EJj+3N58gSgkc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -4089,6 +4110,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\wwwroot\\js\\tareas.js",
+      "SourceId": "GestorTareas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\wwwroot\\",
+      "BasePath": "_content/GestorTareas",
+      "RelativePath": "js/tareas#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jguk1nb7qu",
+      "Integrity": "M6TIgtPFIHwgH4Orok0laqRFGTmXacrw3GQ0GSPm3tA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\tareas.js"
     },
     {
       "Identity": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
@@ -5353,13 +5395,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\zdqb6p2oau-b9sayid5wm.gz",
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\zdqb6p2oau-t3pkja1575.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003134796238"
+          "Quality": "0.001153402537"
         }
       ],
       "ResponseHeaders": [
@@ -5369,19 +5411,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "866"
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"oeKX4+9lWsEl38ibPXUCEwRDiR1B5DnZduuo7keCu7o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 06 Jun 2025 06:05:55 GMT"
+          "Value": "Fri, 06 Jun 2025 19:05:35 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -5397,26 +5439,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"55juYkRLmR/kMZzhBGFdKY4qfgsgE/EJj+3N58gSgkc=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "b9sayid5wm"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-55juYkRLmR/kMZzhBGFdKY4qfgsgE/EJj+3N58gSgkc="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
+      "Route": "css/site.css",
       "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5426,7 +5460,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "2541"
         },
         {
           "Name": "Content-Type",
@@ -5434,11 +5468,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"55juYkRLmR/kMZzhBGFdKY4qfgsgE/EJj+3N58gSgkc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 06 Jun 2025 06:05:55 GMT"
+          "Value": "Fri, 06 Jun 2025 19:05:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-55juYkRLmR/kMZzhBGFdKY4qfgsgE/EJj+3N58gSgkc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\zdqb6p2oau-t3pkja1575.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oeKX4+9lWsEl38ibPXUCEwRDiR1B5DnZduuo7keCu7o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Jun 2025 19:05:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oeKX4+9lWsEl38ibPXUCEwRDiR1B5DnZduuo7keCu7o="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.t3pkja1575.css",
+      "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\zdqb6p2oau-t3pkja1575.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001153402537"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "866"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oeKX4+9lWsEl38ibPXUCEwRDiR1B5DnZduuo7keCu7o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Jun 2025 19:05:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"55juYkRLmR/kMZzhBGFdKY4qfgsgE/EJj+3N58gSgkc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t3pkja1575"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-55juYkRLmR/kMZzhBGFdKY4qfgsgE/EJj+3N58gSgkc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.t3pkja1575.css",
+      "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"55juYkRLmR/kMZzhBGFdKY4qfgsgE/EJj+3N58gSgkc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Jun 2025 19:05:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5448,7 +5627,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "t3pkja1575"
         },
         {
           "Name": "label",
@@ -5456,13 +5635,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-55juYkRLmR/kMZzhBGFdKY4qfgsgE/EJj+3N58gSgkc="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css.gz",
-      "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\zdqb6p2oau-b9sayid5wm.gz",
+      "Route": "css/site.t3pkja1575.css.gz",
+      "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\zdqb6p2oau-t3pkja1575.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5471,7 +5650,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "866"
         },
         {
           "Name": "Content-Type",
@@ -5479,11 +5658,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"oeKX4+9lWsEl38ibPXUCEwRDiR1B5DnZduuo7keCu7o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 06 Jun 2025 06:05:55 GMT"
+          "Value": "Fri, 06 Jun 2025 19:05:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5501,7 +5680,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "t3pkja1575"
         },
         {
           "Name": "label",
@@ -5509,144 +5688,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\zdqb6p2oau-b9sayid5wm.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.003134796238"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "318"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 06 Jun 2025 06:05:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "667"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 06 Jun 2025 06:05:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\zdqb6p2oau-b9sayid5wm.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "318"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 06 Jun 2025 06:05:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
+          "Value": "sha256-oeKX4+9lWsEl38ibPXUCEwRDiR1B5DnZduuo7keCu7o="
         }
       ]
     },
@@ -15370,6 +15412,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA="
+        }
+      ]
+    },
+    {
+      "Route": "js/tareas.jguk1nb7qu.js",
+      "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\fnusmys8lk-jguk1nb7qu.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000374953131"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2666"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A4jQg6hGOT5f+i109uqvin3j2G+c60jllL41IJZ4i6s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Jun 2025 19:17:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"M6TIgtPFIHwgH4Orok0laqRFGTmXacrw3GQ0GSPm3tA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jguk1nb7qu"
+        },
+        {
+          "Name": "label",
+          "Value": "js/tareas.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-M6TIgtPFIHwgH4Orok0laqRFGTmXacrw3GQ0GSPm3tA="
+        }
+      ]
+    },
+    {
+      "Route": "js/tareas.jguk1nb7qu.js",
+      "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\wwwroot\\js\\tareas.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10881"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M6TIgtPFIHwgH4Orok0laqRFGTmXacrw3GQ0GSPm3tA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Jun 2025 19:17:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jguk1nb7qu"
+        },
+        {
+          "Name": "label",
+          "Value": "js/tareas.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-M6TIgtPFIHwgH4Orok0laqRFGTmXacrw3GQ0GSPm3tA="
+        }
+      ]
+    },
+    {
+      "Route": "js/tareas.jguk1nb7qu.js.gz",
+      "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\fnusmys8lk-jguk1nb7qu.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2666"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A4jQg6hGOT5f+i109uqvin3j2G+c60jllL41IJZ4i6s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Jun 2025 19:17:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jguk1nb7qu"
+        },
+        {
+          "Name": "label",
+          "Value": "js/tareas.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-A4jQg6hGOT5f+i109uqvin3j2G+c60jllL41IJZ4i6s="
+        }
+      ]
+    },
+    {
+      "Route": "js/tareas.js",
+      "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\fnusmys8lk-jguk1nb7qu.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000374953131"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2666"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A4jQg6hGOT5f+i109uqvin3j2G+c60jllL41IJZ4i6s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Jun 2025 19:17:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"M6TIgtPFIHwgH4Orok0laqRFGTmXacrw3GQ0GSPm3tA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M6TIgtPFIHwgH4Orok0laqRFGTmXacrw3GQ0GSPm3tA="
+        }
+      ]
+    },
+    {
+      "Route": "js/tareas.js",
+      "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\wwwroot\\js\\tareas.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10881"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M6TIgtPFIHwgH4Orok0laqRFGTmXacrw3GQ0GSPm3tA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Jun 2025 19:17:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M6TIgtPFIHwgH4Orok0laqRFGTmXacrw3GQ0GSPm3tA="
+        }
+      ]
+    },
+    {
+      "Route": "js/tareas.js.gz",
+      "AssetFile": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\obj\\Debug\\net9.0\\compressed\\fnusmys8lk-jguk1nb7qu.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2666"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A4jQg6hGOT5f+i109uqvin3j2G+c60jllL41IJZ4i6s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Jun 2025 19:17:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-A4jQg6hGOT5f+i109uqvin3j2G+c60jllL41IJZ4i6s="
         }
       ]
     },

@@ -29,3 +29,108 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+/* Animaciones para tareas */
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+.fade-out {
+    animation: fadeOut 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+/* Efectos de hover mejorados */
+.tarea-item {
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.tarea-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-left-color: #007bff;
+}
+
+.tarea-item.list-group-item-success:hover {
+    border-left-color: #28a745;
+}
+
+/* Estado de actualización */
+.updating {
+    opacity: 0.7;
+    transform: scale(0.98);
+    transition: all 0.3s ease;
+}
+
+/* Mejoras en botones de estado */
+.btn-estado-tarea {
+    transition: all 0.2s ease;
+    min-width: 40px;
+}
+
+.btn-estado-tarea:hover {
+    transform: scale(1.1);
+}
+
+/* Estadísticas animadas */
+.estadistica-card {
+    transition: transform 0.2s ease;
+}
+
+.estadistica-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Mejoras en filtros */
+.filtro-tarea {
+    transition: all 0.2s ease;
+}
+
+.filtro-tarea:hover {
+    transform: translateY(-2px);
+}
+
+/* Toast personalizados */
+.toast {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Efectos de pulsación */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+    animation: pulse 0.6s ease-in-out;
+}
+
+/* Mejoras responsivas */
+@media (max-width: 768px) {
+    .tarea-item:hover {
+        transform: none;
+    }
+}

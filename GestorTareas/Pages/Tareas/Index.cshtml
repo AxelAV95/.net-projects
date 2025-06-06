@@ -1,4 +1,4 @@
-﻿@page
+﻿@* @page
 @model MyApp.Namespace.IndexModel
 @{
 }
@@ -165,4 +165,179 @@
             </div>
         }
     </div>
+</div> *@
+@page
+@model MyApp.Namespace.IndexModel
+@{
+}
+
+@{
+    ViewData["Title"] = "Mis Tareas";
+}
+<!-- Mensajes de éxito/error existentes -->
+@if (TempData["MensajeExito"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="fas fa-check-circle"></i> @TempData["MensajeExito"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (TempData["MensajeError"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="fas fa-exclamation-circle"></i> @TempData["MensajeError"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>📋 Mis Tareas</h1>
+            <a asp-page="./Crear" class="btn btn-primary">
+                <i class="fas fa-plus"></i> Nueva Tarea
+            </a>
+        </div>
+    </div>
 </div>
+
+<!-- Estadísticas mejoradas -->
+<div class="row mb-4">
+    <div class="col-md-4">
+        <div class="card bg-primary text-white estadistica-card">
+            <div class="card-body">
+                <h5 class="card-title">📊 Total</h5>
+                <h2 class="card-text total-tareas">@Model.TotalTareas</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-success text-white estadistica-card">
+            <div class="card-body">
+                <h5 class="card-title">✅ Completadas</h5>
+                <h2 class="card-text completadas-count">@Model.TareasCompletadas</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-warning text-white estadistica-card">
+            <div class="card-body">
+                <h5 class="card-title">⏳ Pendientes</h5>
+                <h2 class="card-text pendientes-count">@Model.TareasPendientes</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Filtros mejorados -->
+<div class="row mb-3">
+    <div class="col-md-12">
+        <div class="btn-group" role="group" aria-label="Filtros de tareas">
+            <button type="button" data-filtro="" 
+                    class="btn filtro-tarea @(string.IsNullOrEmpty(Model.Filtro) ? "btn-primary" : "btn-outline-primary")">
+                Todas
+            </button>
+            <button type="button" data-filtro="pendientes" 
+                    class="btn filtro-tarea @(Model.Filtro == "pendientes" ? "btn-warning" : "btn-outline-warning")">
+                Pendientes
+            </button>
+            <button type="button" data-filtro="completadas" 
+                    class="btn filtro-tarea @(Model.Filtro == "completadas" ? "btn-success" : "btn-outline-success")">
+                Completadas
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Lista de tareas mejorada -->
+<div class="row">
+    <div class="col-md-12">
+        @if (Model.Tareas.Any())
+        {
+            <div class="list-group">
+                @foreach (var tarea in Model.Tareas)
+                {
+                    <div class="list-group-item tarea-item @(tarea.Completada ? "list-group-item-success" : "")">
+                        <div class="row align-items-center">
+                            <div class="col-md-1">
+                                <button type="button" 
+                                        class="btn btn-sm btn-estado-tarea @(tarea.Completada ? "btn-success" : "btn-outline-secondary")" 
+                                        data-tarea-id="@tarea.Id"
+                                        title="@(tarea.Completada ? "Marcar como pendiente" : "Marcar como completada")">
+                                    @if (tarea.Completada)
+                                    {
+                                        <span>✅</span>
+                                    }
+                                    else
+                                    {
+                                        <span>⬜</span>
+                                    }
+                                </button>
+                            </div>
+                            <div class="col-md-7">
+                                <h5 class="mb-1 tarea-titulo @(tarea.Completada ? "text-decoration-line-through text-muted" : "")">
+                                    @tarea.Titulo
+                                </h5>
+                                @if (!string.IsNullOrEmpty(tarea.Descripcion))
+                                {
+                                    <p class="mb-1 tarea-descripcion @(tarea.Completada ? "text-muted" : "")">
+                                        @tarea.Descripcion
+                                    </p>
+                                }
+                                <small class="text-muted">
+                                    Creada: @tarea.FechaCreacion.ToString("dd/MM/yyyy HH:mm")
+                                    @if (tarea.FechaModificacion.HasValue)
+                                    {
+                                        <span> | Modificada: @tarea.FechaModificacion.Value.ToString("dd/MM/yyyy HH:mm")</span>
+                                    }
+                                </small>
+                            </div>
+                            <div class="col-md-4 text-end">
+                                <div class="btn-group" role="group">
+                                    <a asp-page="./Detalle" asp-route-id="@tarea.Id" class="btn btn-sm btn-outline-info">
+                                        👁️ Ver
+                                    </a>
+                                    <a asp-page="./Editar" asp-route-id="@tarea.Id" class="btn btn-sm btn-outline-primary">
+                                        ✏️ Editar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="text-center py-5">
+                <div class="mb-4">
+                    <i class="fas fa-tasks fa-4x text-muted"></i>
+                </div>
+                @if (string.IsNullOrEmpty(Model.Filtro))
+                {
+                    <h3 class="text-muted">No tienes tareas aún</h3>
+                    <p class="text-muted">¡Crea tu primera tarea para comenzar a organizarte!</p>
+                    <a asp-page="./Crear" class="btn btn-primary btn-lg">
+                        <i class="fas fa-plus"></i> Crear Mi Primera Tarea
+                    </a>
+                }
+                else
+                {
+                    <h3 class="text-muted">No hay tareas @(Model.Filtro)</h3>
+                    <p class="text-muted">Prueba con un filtro diferente.</p>
+                    <button type="button" data-filtro="" class="btn btn-outline-primary filtro-tarea">Ver Todas las Tareas</button>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Token antiforgery para AJAX -->
+<form>
+    @Html.AntiForgeryToken()
+</form>
+
+@section Scripts {
+    <script src="~/js/tareas.js" asp-append-version="true"></script>
+}

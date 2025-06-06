@@ -147,7 +147,6 @@ C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\scopedcss\bundle\GestorTareas.styles.css
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\scopedcss\projectbundle\GestorTareas.bundle.scp.css
-C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\zdqb6p2oau-b9sayid5wm.gz
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\efk9s2qsvz-61n19gt1b8.gz
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\4n5vtx8h9r-xtxxf3hu2r.gz
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\6ec5h9950f-bqjiyaj88i.gz
@@ -435,3 +434,5 @@ C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\bin\Debug\net
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\bin\Debug\net9.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\zdqb6p2oau-t3pkja1575.gz
+C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\fnusmys8lk-jguk1nb7qu.gz

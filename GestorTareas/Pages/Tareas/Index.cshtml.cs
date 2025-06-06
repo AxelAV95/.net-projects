@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace MyApp.Namespace
 {
@@ -13,11 +14,13 @@ namespace MyApp.Namespace
     {
         private readonly AppDbContext _context;
         private readonly UserManager<IdentityUser> _userManager;
+          private readonly ILogger<IndexModel> _logger; 
 
-        public IndexModel(AppDbContext context, UserManager<IdentityUser> userManager)
+        public IndexModel(AppDbContext context, UserManager<IdentityUser> userManager,ILogger<IndexModel> logger)
         {
             _context = context;
             _userManager = userManager;
+            _logger = logger;
         }
 
         public IList<Tarea> Tareas { get; set; } = new List<Tarea>();
@@ -64,7 +67,7 @@ namespace MyApp.Namespace
         public async Task<IActionResult> OnPostCambiarEstadoAsync(int id)
         {
             var usuarioId = _userManager.GetUserId(User);
-            
+
             var tarea = await _context.Tareas
                 .FirstOrDefaultAsync(t => t.Id == id && t.UsuarioId == usuarioId);
 
@@ -72,11 +75,14 @@ namespace MyApp.Namespace
             {
                 tarea.Completada = !tarea.Completada;
                 tarea.FechaModificacion = DateTime.Now;
-                
+
                 await _context.SaveChangesAsync();
+
+                _logger.LogInformation("Tarea {TareaId} cambió estado a {Estado} para usuario {UsuarioId}",
+                    id, tarea.Completada ? "Completada" : "Pendiente", usuarioId);
             }
 
-            return RedirectToPage();
+            return new JsonResult(new { success = true, completada = tarea?.Completada ?? false });
         }
     }
 }

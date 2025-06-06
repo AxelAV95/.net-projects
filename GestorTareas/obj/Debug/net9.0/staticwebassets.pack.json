@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\wwwroot\\js\\tareas.js",
+      "PackagePath": "staticwebassets\\js\\tareas.js"
+    },
+    {
       "Id": "C:\\Users\\andra\\Desktop\\Proyectos\\Dotnet\\.net-projects\\GestorTareas\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
