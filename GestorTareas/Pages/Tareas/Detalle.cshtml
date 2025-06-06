@@ -1,0 +1,230 @@
+﻿@page
+@model MyApp.Namespace.DetalleModel
+@{
+    ViewData["Title"] = "Detalles de la Tarea";
+}
+
+@if (Model.Tarea != null)
+{
+    <!-- Mensaje de éxito/error -->
+    @if (TempData["MensajeExito"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="fas fa-check-circle"></i> @TempData["MensajeExito"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <!-- Información principal de la tarea -->
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <div>
+                        <h2 class="mb-0">
+                            @if (Model.Tarea.Completada)
+                            {
+                                <span class="badge bg-success me-2">✅ Completada</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-warning me-2">⏳ Pendiente</span>
+                            }
+                            📋 Detalles de la Tarea
+                        </h2>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-cog"></i> Acciones
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li>
+                                <a class="dropdown-item" asp-page="./Editar" asp-route-id="@Model.Tarea.Id">
+                                    <i class="fas fa-edit"></i> Editar Tarea
+                                </a>
+                            </li>
+                            <li>
+                                <form method="post" asp-page-handler="CambiarEstado" asp-route-id="@Model.Tarea.Id" class="d-inline">
+                                    <button type="submit" class="dropdown-item">
+                                        @if (Model.Tarea.Completada)
+                                        {
+                                            <i class="fas fa-undo"></i><span> Marcar como Pendiente</span>
+                                        }
+                                        else
+                                        {
+                                            <i class="fas fa-check"></i><span> Marcar como Completada</span>
+                                        }
+                                    </button>
+                                </form>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <button type="button" class="dropdown-item text-danger" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                                    <i class="fas fa-trash"></i> Eliminar Tarea
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <!-- Título -->
+                    <div class="mb-4">
+                        <h3 class="@(Model.Tarea.Completada ? "text-decoration-line-through text-muted" : "")">
+                            @Model.Tarea.Titulo
+                        </h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    @if (!string.IsNullOrEmpty(Model.Tarea.Descripcion))
+                    {
+                        <div class="mb-4">
+                            <h5>📝 Descripción</h5>
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <p class="mb-0 @(Model.Tarea.Completada ? "text-muted" : "")">
+                                        @Html.Raw(Model.Tarea.Descripcion.Replace("\n", "<br />"))
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="mb-4">
+                            <h5>📝 Descripción</h5>
+                            <p class="text-muted fst-italic">No se proporcionó descripción para esta tarea.</p>
+                        </div>
+                    }
+
+                    <!-- Información de fechas -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card bg-primary text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <i class="fas fa-calendar-plus"></i> Fecha de Creación
+                                    </h5>
+                                    <p class="card-text">
+                                        @Model.Tarea.FechaCreacion.ToString("dddd, dd 'de' MMMM 'de' yyyy")
+                                        <br>
+                                        <small>@Model.Tarea.FechaCreacion.ToString("HH:mm")</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card @(Model.Tarea.FechaModificacion.HasValue ? "bg-info" : "bg-secondary") text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <i class="fas fa-calendar-edit"></i> Última Modificación
+                                    </h5>
+                                    <p class="card-text">
+                                        @if (Model.Tarea.FechaModificacion.HasValue)
+                                        {
+                                            @Model.Tarea.FechaModificacion.Value.ToString("dddd, dd 'de' MMMM 'de' yyyy")
+                                            <br>
+                                            <small>@Model.Tarea.FechaModificacion.Value.ToString("HH:mm")</small>
+                                        }
+                                        else
+                                        {
+                                            <span>No modificada</span>
+                                            <br>
+                                            <small>Esta tarea no ha sido editada desde su creación</small>
+                                        }
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-between">
+                        <a asp-page="./Index" class="btn btn-outline-secondary">
+                            <i class="fas fa-arrow-left"></i> Volver a Mis Tareas
+                        </a>
+                        <div>
+                            <a asp-page="./Editar" asp-route-id="@Model.Tarea.Id" class="btn btn-primary">
+                                <i class="fas fa-edit"></i> Editar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de confirmación para eliminar -->
+    <div class="modal fade" id="eliminarModal" tabindex="-1" aria-labelledby="eliminarModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="eliminarModalLabel">
+                        <i class="fas fa-exclamation-triangle text-danger"></i> Confirmar Eliminación
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>¿Estás seguro de que deseas eliminar esta tarea?</strong></p>
+                    <div class="alert alert-warning">
+                        <i class="fas fa-info-circle"></i>
+                        <strong>Título:</strong> @Model.Tarea.Titulo
+                    </div>
+                    <p class="text-muted">
+                        <i class="fas fa-exclamation-circle"></i>
+                        Esta acción no se puede deshacer. La tarea se eliminará permanentemente de tu lista.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i> Cancelar
+                    </button>
+                    <form method="post" asp-page-handler="Eliminar" asp-route-id="@Model.Tarea.Id" class="d-inline">
+                        <button type="submit" class="btn btn-danger">
+                            <i class="fas fa-trash"></i> Sí, Eliminar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <!-- Caso cuando la tarea no existe -->
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="alert alert-danger text-center">
+                <h4><i class="fas fa-exclamation-triangle"></i> Tarea No Encontrada</h4>
+                <p>La tarea que buscas no existe o no tienes permisos para verla.</p>
+                <a asp-page="./Index" class="btn btn-primary">
+                    <i class="fas fa-arrow-left"></i> Volver a Mis Tareas
+                </a>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <script>
+        // Auto-desaparecer alertas después de 5 segundos
+        setTimeout(function() {
+            const alerts = document.querySelectorAll('.alert-dismissible');
+            alerts.forEach(alert => {
+                const bootstrapAlert = new bootstrap.Alert(alert);
+                bootstrapAlert.close();
+            });
+        }, 5000);
+
+        // Confirmar eliminación con doble verificación
+        document.addEventListener('DOMContentLoaded', function() {
+            const eliminarForm = document.querySelector('#eliminarModal form');
+            if (eliminarForm) {
+                eliminarForm.addEventListener('submit', function(e) {
+                    if (!confirm('¿Realmente deseas eliminar esta tarea? Esta acción no se puede deshacer.')) {
+                        e.preventDefault();
+                    }
+                });
+            }
+        });
+    </script>
+}

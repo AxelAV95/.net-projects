@@ -212,6 +212,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFyZWFzXENyZWFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/andra/Desktop/Proyectos/Dotnet/.net-projects/GestorTareas/Pages/Tareas/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFyZWFzXERldGFsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/andra/Desktop/Proyectos/Dotnet/.net-projects/GestorTareas/Pages/Tareas/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFyZWFzXEVkaXRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

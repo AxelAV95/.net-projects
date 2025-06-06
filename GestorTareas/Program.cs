@@ -25,6 +25,13 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => {
 
 var app = builder.Build();
 
+app.UseRequestLocalization(new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture("es-ES"),
+    SupportedCultures = new[] { new System.Globalization.CultureInfo("es-ES") },
+    SupportedUICultures = new[] { new System.Globalization.CultureInfo("es-ES") }
+});
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
