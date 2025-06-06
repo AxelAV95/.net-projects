@@ -129,13 +129,13 @@
                             </div>
                             <div class="col-md-4 text-end">
                                 <div class="btn-group" role="group">
-                                    <a asp-page="./Detalle" asp-route-id="@tarea.Id" class="btn btn-sm btn-outline-info">
-                                        👁️ Ver
-                                    </a>
-                                    <a asp-page="./Editar" asp-route-id="@tarea.Id" class="btn btn-sm btn-outline-primary">
-                                        ✏️ Editar
-                                    </a>
-                                </div>
+    <a asp-page="./Detalle" asp-route-id="@tarea.Id" class="btn btn-sm btn-outline-info" title="Ver detalles de la tarea">
+        👁️ Ver
+    </a>
+    <a asp-page="./Editar" asp-route-id="@tarea.Id" class="btn btn-sm btn-outline-primary" title="Editar esta tarea">
+        ✏️ Editar
+    </a>
+</div>
                             </div>
                         </div>
                     </div>

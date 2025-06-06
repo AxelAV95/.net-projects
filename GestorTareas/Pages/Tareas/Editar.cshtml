@@ -1,0 +1,161 @@
+﻿@page
+@model MyApp.Namespace.EditarModel
+@{
+    ViewData["Title"] = "Editar Tarea";
+}
+
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">✏️ Editar Tarea</h2>
+                @if (Model.Tarea != null)
+                {
+                    <small class="text-muted">
+                        Creada el @Model.Tarea.FechaCreacion.ToString("dd/MM/yyyy HH:mm")
+                        @if (Model.Tarea.FechaModificacion.HasValue)
+                        {
+                            <span> | Última modificación: @Model.Tarea.FechaModificacion.Value.ToString("dd/MM/yyyy HH:mm")</span>
+                        }
+                    </small>
+                }
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <input type="hidden" asp-for="Input.Id" />
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+                    
+                    <div class="mb-3">
+                        <label asp-for="Input.Titulo" class="form-label"></label>
+                        <input asp-for="Input.Titulo" class="form-control" placeholder="Ej: Completar proyecto, Llamar al médico, etc." />
+                        <span asp-validation-for="Input.Titulo" class="text-danger"></span>
+                        <div class="form-text" id="titulo-help">Describe brevemente qué necesitas hacer</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Input.Descripcion" class="form-label"></label>
+                        <textarea asp-for="Input.Descripcion" class="form-control" rows="4" 
+                                  placeholder="Añade detalles adicionales sobre esta tarea (opcional)"></textarea>
+                        <span asp-validation-for="Input.Descripcion" class="text-danger"></span>
+                        <div class="form-text" id="descripcion-help">Información adicional que te ayude a recordar los detalles</div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="form-check">
+                            <input asp-for="Input.Completada" class="form-check-input" type="checkbox" />
+                            <label asp-for="Input.Completada" class="form-check-label">
+                                Marcar como completada
+                            </label>
+                        </div>
+                        <div class="form-text">Cambia el estado de la tarea</div>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <div>
+                            <a asp-page="./Detalle" asp-route-id="@Model.Input.Id" class="btn btn-outline-info">
+                                <i class="fas fa-eye"></i> Ver Detalles
+                            </a>
+                        </div>
+                        <div>
+                            <a asp-page="./Index" class="btn btn-secondary me-md-2">
+                                <i class="fas fa-times"></i> Cancelar
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Guardar Cambios
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Información de ayuda -->
+<div class="row mt-4">
+    <div class="col-md-8 offset-md-2">
+        <div class="alert alert-info">
+            <h5 class="alert-heading">📝 Editando tarea</h5>
+            <p class="mb-0">
+                Puedes modificar cualquier campo de tu tarea. Los cambios se guardarán cuando hagas clic en "Guardar Cambios".
+                Si marcas la tarea como completada, aparecerá con un estilo diferente en tu lista de tareas.
+            </p>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    
+    <script>
+        // Auto-focus en el campo título al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('Input_Titulo').focus();
+            // Posicionar cursor al final del texto
+            const titulo = document.getElementById('Input_Titulo');
+            titulo.setSelectionRange(titulo.value.length, titulo.value.length);
+        });
+
+        // Contador de caracteres para el título
+        const tituloInput = document.getElementById('Input_Titulo');
+        const tituloHelp = document.getElementById('titulo-help');
+        
+        function actualizarContadorTitulo() {
+            const remaining = 200 - tituloInput.value.length;
+            tituloHelp.textContent = `Describe brevemente qué necesitas hacer (${remaining} caracteres restantes)`;
+            
+            if (remaining < 20) {
+                tituloHelp.classList.add('text-warning');
+            } else {
+                tituloHelp.classList.remove('text-warning');
+            }
+        }
+        
+        tituloInput.addEventListener('input', actualizarContadorTitulo);
+        // Actualizar al cargar
+        actualizarContadorTitulo();
+
+        // Contador de caracteres para la descripción
+        const descripcionTextarea = document.getElementById('Input_Descripcion');
+        const descripcionHelp = document.getElementById('descripcion-help');
+        
+        function actualizarContadorDescripcion() {
+            const remaining = 1000 - (descripcionTextarea.value || '').length;
+            descripcionHelp.textContent = `Información adicional que te ayude a recordar los detalles (${remaining} caracteres restantes)`;
+            
+            if (remaining < 50) {
+                descripcionHelp.classList.add('text-warning');
+            } else {
+                descripcionHelp.classList.remove('text-warning');
+            }
+        }
+        
+        descripcionTextarea.addEventListener('input', actualizarContadorDescripcion);
+        // Actualizar al cargar
+        actualizarContadorDescripcion();
+
+        // Detectar cambios no guardados
+        let formModificado = false;
+        const form = document.querySelector('form');
+        const inputs = form.querySelectorAll('input, textarea');
+        
+        inputs.forEach(input => {
+            input.addEventListener('change', () => {
+                formModificado = true;
+            });
+        });
+
+        // Advertir antes de salir si hay cambios no guardados
+        window.addEventListener('beforeunload', function(e) {
+            if (formModificado) {
+                e.preventDefault();
+                e.returnValue = '';
+            }
+        });
+
+        // No advertir cuando se envía el formulario
+        form.addEventListener('submit', () => {
+            formModificado = false;
+        });
+    </script>
+}
