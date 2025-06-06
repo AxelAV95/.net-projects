@@ -1,3 +1,4 @@
+using GestorTareas.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,7 +11,6 @@ namespace GestorTareas.Data
         {
         }
 
-        // Aquí añadiremos nuestros DbSet más adelante
-        // public DbSet<Tarea> Tareas { get; set; }
+        public DbSet<Tarea> Tareas { get; set; }
     }
 }
