@@ -1,10 +1,11 @@
 ﻿@page
+@using GestorTareas.Models
 @model MyApp.Namespace.CrearModel
 @{
     ViewData["Title"] = "Crear Nueva Tarea";
 }
 
-<div class="row">
+@* <div class="row">
     <div class="col-md-8 offset-md-2">
         <div class="card">
             <div class="card-header">
@@ -106,6 +107,208 @@
                 descripcionHelp.classList.add('text-warning');
             } else {
                 descripcionHelp.classList.remove('text-warning');
+            }
+        });
+    </script>
+} *@
+
+<div class="row">
+    <div class="col-md-10 offset-md-1">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">📝 Crear Nueva Tarea</h2>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+                    
+                    <!-- Información básica -->
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="mb-3">
+                                <label asp-for="Input.Titulo" class="form-label"></label>
+                                <input asp-for="Input.Titulo" class="form-control" placeholder="Ej: Completar proyecto, Llamar al médico, etc." />
+                                <span asp-validation-for="Input.Titulo" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label asp-for="Input.Prioridad" class="form-label"></label>
+                                <select asp-for="Input.Prioridad" class="form-select" asp-items="Html.GetEnumSelectList<PrioridadTarea>()">
+                                </select>
+                                <span asp-validation-for="Input.Prioridad" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Descripción -->
+                    <div class="mb-3">
+                        <label asp-for="Input.Descripcion" class="form-label"></label>
+                        <textarea asp-for="Input.Descripcion" class="form-control" rows="3" 
+                                  placeholder="Describe los detalles de la tarea..."></textarea>
+                        <span asp-validation-for="Input.Descripcion" class="text-danger"></span>
+                    </div>
+
+                    <!-- Fechas y tiempo -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label asp-for="Input.FechaVencimiento" class="form-label"></label>
+                                <input asp-for="Input.FechaVencimiento" type="datetime-local" class="form-control" />
+                                <span asp-validation-for="Input.FechaVencimiento" class="text-danger"></span>
+                                <div class="form-text">Opcional: cuándo debe estar completada</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label asp-for="Input.TiempoEstimado" class="form-label"></label>
+                                <div class="input-group">
+                                    <input asp-for="Input.TiempoEstimado" type="number" class="form-control" min="0" max="1440" />
+                                    <span class="input-group-text">minutos</span>
+                                </div>
+                                <span asp-validation-for="Input.TiempoEstimado" class="text-danger"></span>
+                                <div class="form-text">Tiempo estimado para completar</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Categoría y etiquetas -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label asp-for="Input.Categoria" class="form-label"></label>
+                                <input asp-for="Input.Categoria" class="form-control" list="categorias" 
+                                       placeholder="Ej: Trabajo, Personal, Hogar..." />
+                                <datalist id="categorias">
+                                    @foreach (var categoria in Model.CategoriasUsuario)
+                                    {
+                                        <option value="@categoria"/>
+                                    }
+                                    @foreach (var categoria in Model.CategoriasPopulares)
+                                    {
+                                        <option value="@categoria"/>
+                                    }
+                                </datalist>
+                                <span asp-validation-for="Input.Categoria" class="text-danger"></span>
+                                <div class="form-text">Organiza tus tareas por categorías</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label asp-for="Input.Etiquetas" class="form-label"></label>
+                                <input asp-for="Input.Etiquetas" class="form-control" 
+                                       placeholder="urgent, important, review..." />
+                                <span asp-validation-for="Input.Etiquetas" class="text-danger"></span>
+                                <div class="form-text">Etiquetas separadas por comas</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- URL y notas -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label asp-for="Input.UrlReferencia" class="form-label"></label>
+                                <input asp-for="Input.UrlReferencia" type="url" class="form-control" 
+                                       placeholder="https://ejemplo.com" />
+                                <span asp-validation-for="Input.UrlReferencia" class="text-danger"></span>
+                                <div class="form-text">Link relacionado con la tarea</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label asp-for="Input.Notas" class="form-label"></label>
+                                <textarea asp-for="Input.Notas" class="form-control" rows="2" 
+                                          placeholder="Notas adicionales..."></textarea>
+                                <span asp-validation-for="Input.Notas" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Estado -->
+                    <div class="mb-4">
+                        <div class="form-check">
+                            <input asp-for="Input.Completada" class="form-check-input" type="checkbox" />
+                            <label asp-for="Input.Completada" class="form-check-label">
+                                Marcar como completada
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a asp-page="./Index" class="btn btn-secondary me-md-2">
+                            <i class="fas fa-times"></i> Cancelar
+                        </a>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save"></i> Crear Tarea
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row mt-3">
+    <div class="col-md-10 offset-md-1">
+        <div class="card bg-light">
+            <div class="card-body">
+                <h6 class="card-title">⚡ Atajos rápidos de tiempo:</h6>
+                <div class="btn-group btn-group-sm" role="group">
+                    <button type="button" class="btn btn-outline-secondary" onclick="setTiempo(15)">15 min</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="setTiempo(30)">30 min</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="setTiempo(60)">1 hora</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="setTiempo(120)">2 horas</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="setTiempo(240)">4 horas</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    
+    <script>
+        // Función para establecer tiempo estimado
+        function setTiempo(minutos) {
+            document.getElementById('Input_TiempoEstimado').value = minutos;
+        }
+
+        // Auto-focus en el título
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('Input_Titulo').focus();
+        });
+
+        // Sugerir fecha de vencimiento basada en prioridad
+        document.getElementById('Input_Prioridad').addEventListener('change', function() {
+            const fechaVencimiento = document.getElementById('Input_FechaVencimiento');
+            if (!fechaVencimiento.value) {
+                const ahora = new Date();
+                let diasAgregar = 7; // Por defecto una semana
+
+                switch(this.value) {
+                    case '4': // Urgente
+                        diasAgregar = 1;
+                        break;
+                    case '3': // Alta
+                        diasAgregar = 3;
+                        break;
+                    case '2': // Media
+                        diasAgregar = 7;
+                        break;
+                    case '1': // Baja
+                        diasAgregar = 14;
+                        break;
+                }
+
+                ahora.setDate(ahora.getDate() + diasAgregar);
+                ahora.setHours(17, 0, 0, 0); // 5 PM por defecto
+                
+                const fechaFormateada = ahora.toISOString().slice(0, 16);
+                fechaVencimiento.value = fechaFormateada;
             }
         });
     </script>

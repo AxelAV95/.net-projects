@@ -46,7 +46,8 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 
 // Servicios personalizados
 builder.Services.AddScoped<ITareaValidationService, TareaValidationService>();
-
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+builder.Services.AddScoped<IBusquedaService, BusquedaService>();
 // Configuración de Razor Pages
 builder.Services.AddRazorPages(options =>
 {
