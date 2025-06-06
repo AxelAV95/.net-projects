@@ -1,0 +1,46 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="text-center">
+    @if (User.Identity?.IsAuthenticated == true)
+    {
+        <div class="jumbotron">
+            <h1 class="display-4">¡Bienvenido, @User.Identity.Name! 👋</h1>
+            <p class="lead">Gestiona tus tareas de manera eficiente.</p>
+            <hr class="my-4">
+            <p>Ve a tu lista de tareas para comenzar a organizarte.</p>
+            <a class="btn btn-primary btn-lg" asp-page="/Tareas/Index" role="button">Ver Mis Tareas</a>
+        </div>
+    }
+    else
+    {
+        <div class="jumbotron">
+            <h1 class="display-4">📋 Gestor de Tareas Personales</h1>
+            <p class="lead">Organiza tu vida, una tarea a la vez.</p>
+            <hr class="my-4">
+            <p>Regístrate para comenzar a gestionar tus tareas de manera eficiente.</p>
+            <div class="mt-4">
+                <a class="btn btn-primary btn-lg me-3" asp-area="Identity" asp-page="/Account/Register" role="button">Registrarse</a>
+                <a class="btn btn-outline-secondary btn-lg" asp-area="Identity" asp-page="/Account/Login" role="button">Iniciar Sesión</a>
+            </div>
+        </div>
+    }
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <h3>✅ Organización</h3>
+        <p>Mantén todas tus tareas organizadas en un solo lugar.</p>
+    </div>
+    <div class="col-md-4">
+        <h3>🎯 Productividad</h3>
+        <p>Marca tareas como completadas y ve tu progreso.</p>
+    </div>
+    <div class="col-md-4">
+        <h3>🔒 Seguridad</h3>
+        <p>Tus tareas son privadas y solo tú puedes verlas.</p>
+    </div>
+</div>

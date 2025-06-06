@@ -1,0 +1,33 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h2>@Model.Mensaje</h2>
+
+    @{
+    var saludo = "Hola, mundo";
+    var hora = DateTime.Now.Hour;
+}
+<p>@saludo</p>
+
+@if (hora < 12)
+{
+    <p>¡Buenos días!</p>
+}
+else
+{
+    <p>¡Buenas tardes o noches!</p>
+}
+
+@for (int i = 0; i < 5; i++)
+{
+    <li>Elemento @i</li>
+}
+
+@* Este es un comentario Razor *@
+</div>

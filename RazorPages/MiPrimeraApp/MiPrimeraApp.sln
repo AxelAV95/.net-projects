@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiPrimeraApp", "MiPrimeraApp.csproj", "{939882DA-F60A-61DD-F6E2-DC1FC6CA2EEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{939882DA-F60A-61DD-F6E2-DC1FC6CA2EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939882DA-F60A-61DD-F6E2-DC1FC6CA2EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939882DA-F60A-61DD-F6E2-DC1FC6CA2EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939882DA-F60A-61DD-F6E2-DC1FC6CA2EEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0C6A986-88EA-4F50-8CAA-CB4C7E479487}
+	EndGlobalSection
+EndGlobal

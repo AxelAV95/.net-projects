@@ -1,0 +1,26 @@
+﻿@page
+@model MyApp.Namespace.ContactoModel
+@* @{
+    Layout = "_Layout";
+} *@
+<h2>Formulario de Contacto</h2>
+
+<form method="post">
+    <label>Nombre:</label>
+    <input asp-for="Nombre" />
+    <span asp-validation-for="Nombre"></span>
+    <br />
+    <button type="submit">Enviar</button>
+</form>
+
+@if (Model.Enviado)
+{
+    <p>Gracias, @Model.Nombre</p>
+    <partial name="_MiParcial" />
+
+
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
