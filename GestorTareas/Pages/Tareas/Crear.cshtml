@@ -1,4 +1,112 @@
 ﻿@page
 @model MyApp.Namespace.CrearModel
 @{
+    ViewData["Title"] = "Crear Nueva Tarea";
+}
+
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">📝 Crear Nueva Tarea</h2>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+                    
+                    <div class="mb-3">
+                        <label asp-for="Input.Titulo" class="form-label"></label>
+                        <input asp-for="Input.Titulo" class="form-control" placeholder="Ej: Completar proyecto, Llamar al médico, etc." />
+                        <span asp-validation-for="Input.Titulo" class="text-danger"></span>
+                        <div class="form-text">Describe brevemente qué necesitas hacer</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Input.Descripcion" class="form-label"></label>
+                        <textarea asp-for="Input.Descripcion" class="form-control" rows="4" 
+                                  placeholder="Añade detalles adicionales sobre esta tarea (opcional)"></textarea>
+                        <span asp-validation-for="Input.Descripcion" class="text-danger"></span>
+                        <div class="form-text">Información adicional que te ayude a recordar los detalles</div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="form-check">
+                            <input asp-for="Input.Completada" class="form-check-input" type="checkbox" />
+                            <label asp-for="Input.Completada" class="form-check-label">
+                                Marcar como completada
+                            </label>
+                        </div>
+                        <div class="form-text">Marca esta opción si la tarea ya está terminada</div>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a asp-page="./Index" class="btn btn-secondary me-md-2">
+                            <i class="fas fa-times"></i> Cancelar
+                        </a>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save"></i> Crear Tarea
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Información adicional -->
+<div class="row mt-4">
+    <div class="col-md-8 offset-md-2">
+        <div class="card bg-light">
+            <div class="card-body">
+                <h5 class="card-title">💡 Consejos para crear buenas tareas</h5>
+                <ul class="mb-0">
+                    <li><strong>Sé específico:</strong> "Revisar emails de trabajo" es mejor que "Revisar emails"</li>
+                    <li><strong>Usa verbos de acción:</strong> Empezar con palabras como "Llamar", "Escribir", "Completar"</li>
+                    <li><strong>Añade contexto:</strong> Usa la descripción para recordar detalles importantes</li>
+                    <li><strong>Mantén el enfoque:</strong> Si es muy grande, divídela en tareas más pequeñas</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    
+    <script>
+        // Auto-focus en el campo título al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('Input_Titulo').focus();
+        });
+
+        // Contador de caracteres para el título
+        const tituloInput = document.getElementById('Input_Titulo');
+        const tituloHelp = tituloInput.nextElementSibling.nextElementSibling;
+        
+        tituloInput.addEventListener('input', function() {
+            const remaining = 200 - this.value.length;
+            tituloHelp.textContent = `Describe brevemente qué necesitas hacer (${remaining} caracteres restantes)`;
+            
+            if (remaining < 20) {
+                tituloHelp.classList.add('text-warning');
+            } else {
+                tituloHelp.classList.remove('text-warning');
+            }
+        });
+
+        // Contador de caracteres para la descripción
+        const descripcionTextarea = document.getElementById('Input_Descripcion');
+        const descripcionHelp = descripcionTextarea.nextElementSibling.nextElementSibling;
+        
+        descripcionTextarea.addEventListener('input', function() {
+            const remaining = 1000 - this.value.length;
+            descripcionHelp.textContent = `Información adicional que te ayude a recordar los detalles (${remaining} caracteres restantes)`;
+            
+            if (remaining < 50) {
+                descripcionHelp.classList.add('text-warning');
+            } else {
+                descripcionHelp.classList.remove('text-warning');
+            }
+        });
+    </script>
 }
