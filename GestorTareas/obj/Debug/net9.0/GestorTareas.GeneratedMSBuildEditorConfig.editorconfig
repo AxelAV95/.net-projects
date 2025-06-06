@@ -200,8 +200,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/andra/Desktop/Proyectos/Dotnet/.net-projects/GestorTareas/Pages/Shared/_LoadingSpinner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2FkaW5nU3Bpbm5lci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/andra/Desktop/Proyectos/Dotnet/.net-projects/GestorTareas/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andra/Desktop/Proyectos/Dotnet/.net-projects/GestorTareas/Pages/Shared/_SecurityAlerts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9TZWN1cml0eUFsZXJ0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/andra/Desktop/Proyectos/Dotnet/.net-projects/GestorTareas/Pages/Shared/_ValidationScriptsPartial.cshtml]
