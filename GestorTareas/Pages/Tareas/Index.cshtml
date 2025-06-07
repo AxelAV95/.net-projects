@@ -234,16 +234,16 @@
 <div class="row mb-3">
     <div class="col-md-12">
         <div class="btn-group" role="group" aria-label="Filtros de tareas">
-            <button type="button" data-filtro="" 
-                    class="btn filtro-tarea @(string.IsNullOrEmpty(Model.Filtro) ? "btn-primary" : "btn-outline-primary")">
+            <button type="button" data-filtro=""
+                class="btn filtro-tarea @(string.IsNullOrEmpty(Model.Filtro) ? "btn-primary" : "btn-outline-primary")">
                 Todas
             </button>
-            <button type="button" data-filtro="pendientes" 
-                    class="btn filtro-tarea @(Model.Filtro == "pendientes" ? "btn-warning" : "btn-outline-warning")">
+            <button type="button" data-filtro="pendientes"
+                class="btn filtro-tarea @(Model.Filtro == "pendientes" ? "btn-warning" : "btn-outline-warning")">
                 Pendientes
             </button>
-            <button type="button" data-filtro="completadas" 
-                    class="btn filtro-tarea @(Model.Filtro == "completadas" ? "btn-success" : "btn-outline-success")">
+            <button type="button" data-filtro="completadas"
+                class="btn filtro-tarea @(Model.Filtro == "completadas" ? "btn-success" : "btn-outline-success")">
                 Completadas
             </button>
         </div>
@@ -261,10 +261,10 @@
                     <div class="list-group-item tarea-item @(tarea.Completada ? "list-group-item-success" : "")">
                         <div class="row align-items-center">
                             <div class="col-md-1">
-                                <button type="button" 
-                                        class="btn btn-sm btn-estado-tarea @(tarea.Completada ? "btn-success" : "btn-outline-secondary")" 
-                                        data-tarea-id="@tarea.Id"
-                                        title="@(tarea.Completada ? "Marcar como pendiente" : "Marcar como completada")">
+                                <button type="button"
+                                    class="btn btn-sm btn-estado-tarea @(tarea.Completada ? "btn-success" : "btn-outline-secondary")"
+                                    data-tarea-id="@tarea.Id"
+                                    title="@(tarea.Completada ? "Marcar como pendiente" : "Marcar como completada")">
                                     @if (tarea.Completada)
                                     {
                                         <span>✅</span>
@@ -276,7 +276,8 @@
                                 </button>
                             </div>
                             <div class="col-md-7">
-                                <h5 class="mb-1 tarea-titulo @(tarea.Completada ? "text-decoration-line-through text-muted" : "")">
+                                <h5
+                                    class="mb-1 tarea-titulo @(tarea.Completada ? "text-decoration-line-through text-muted" : "")">
                                     @tarea.Titulo
                                 </h5>
                                 @if (!string.IsNullOrEmpty(tarea.Descripcion))
@@ -295,12 +296,18 @@
                             </div>
                             <div class="col-md-4 text-end">
                                 <div class="btn-group" role="group">
-                                    <a asp-page="./Detalle" asp-route-id="@tarea.Id" class="btn btn-sm btn-outline-info">
+                                    <a asp-page="./Detalle" asp-route-id="@tarea.Id" class="btn btn-sm btn-outline-info"
+                                        title="Ver detalles de la tarea">
                                         👁️ Ver
                                     </a>
-                                    <a asp-page="./Editar" asp-route-id="@tarea.Id" class="btn btn-sm btn-outline-primary">
+                                    <a asp-page="./Editar" asp-route-id="@tarea.Id" class="btn btn-sm btn-outline-primary"
+                                        title="Editar esta tarea">
                                         ✏️ Editar
                                     </a>
+                                    <button type="button" class="btn btn-sm btn-outline-danger btn-eliminar-tarea"
+                                        data-tarea-id="@tarea.Id" data-tarea-titulo="@tarea.Titulo" title="Eliminar esta tarea">
+                                        🗑️ Eliminar
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -326,12 +333,58 @@
                 {
                     <h3 class="text-muted">No hay tareas @(Model.Filtro)</h3>
                     <p class="text-muted">Prueba con un filtro diferente.</p>
-                    <button type="button" data-filtro="" class="btn btn-outline-primary filtro-tarea">Ver Todas las Tareas</button>
+                    <button type="button" data-filtro="" class="btn btn-outline-primary filtro-tarea">Ver Todas las
+                        Tareas</button>
                 }
             </div>
         }
     </div>
+
+    <!-- Modal de confirmación para eliminar tarea -->
+    <div class="modal fade" id="eliminarTareaModal" tabindex="-1" aria-labelledby="eliminarTareaModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="eliminarTareaModalLabel">
+                        <i class="fas fa-exclamation-triangle"></i> Confirmar eliminación
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-trash-alt fa-3x text-danger mb-3"></i>
+                        <h6>¿Estás seguro de que deseas eliminar esta tarea?</h6>
+                    </div>
+
+                    <div class="alert alert-warning">
+                        <strong>Tarea a eliminar:</strong>
+                        <div id="tareaAEliminar" class="mt-2 fw-bold"></div>
+                    </div>
+
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i>
+                        <strong>Esta acción no se puede deshacer.</strong> La tarea se eliminará permanentemente de tu
+                        lista.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i> Cancelar
+                    </button>
+                    <form id="formEliminarTarea" method="post" asp-page-handler="Eliminar" class="d-inline">
+                        <input type="hidden" id="tareaIdAEliminar" name="id" />
+                        <button type="submit" class="btn btn-danger">
+                            <i class="fas fa-trash"></i> Sí, eliminar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 
 <!-- Token antiforgery para AJAX -->
 <form>
@@ -340,4 +393,58 @@
 
 @section Scripts {
     <script src="~/js/tareas.js" asp-append-version="true"></script>
+    <script>
+        // Funcionalidad de eliminación con confirmación
+        document.addEventListener('DOMContentLoaded', function () {
+            // Manejar clicks en botones de eliminar
+            document.addEventListener('click', function (e) {
+                if (e.target.closest('.btn-eliminar-tarea')) {
+                    e.preventDefault();
+                    mostrarModalEliminar(e.target.closest('.btn-eliminar-tarea'));
+                }
+            });
+
+            // Confirmar eliminación final
+            const formEliminar = document.getElementById('formEliminarTarea');
+            if (formEliminar) {
+                formEliminar.addEventListener('submit', function (e) {
+                    // Doble confirmación para seguridad extra
+                    if (!confirm('¿Realmente deseas eliminar esta tarea? Esta acción no se puede deshacer.')) {
+                        e.preventDefault();
+                    }
+                });
+            }
+        });
+
+        function mostrarModalEliminar(button) {
+            const tareaId = button.dataset.tareaId;
+            const tareaTitle = button.dataset.tareaTitulo;
+
+            // Actualizar contenido del modal
+            document.getElementById('tareaAEliminar').textContent = tareaTitle;
+            document.getElementById('tareaIdAEliminar').value = tareaId;
+
+            // Mostrar modal
+            const modal = new bootstrap.Modal(document.getElementById('eliminarTareaModal'));
+            modal.show();
+        }
+
+        // Auto-ocultar alertas después de 5 segundos
+        setTimeout(function () {
+            const alerts = document.querySelectorAll('.alert-dismissible');
+            alerts.forEach(alert => {
+                const bootstrapAlert = new bootstrap.Alert(alert);
+                bootstrapAlert.close();
+            });
+        }, 5000);
+
+        // Animación de eliminación exitosa
+        if (document.querySelector('.alert-success')) {
+            // Añadir clase de celebración si se eliminó exitosamente
+            document.body.classList.add('elimination-success');
+            setTimeout(() => {
+                document.body.classList.remove('elimination-success');
+            }, 1000);
+        }
+    </script>
 }

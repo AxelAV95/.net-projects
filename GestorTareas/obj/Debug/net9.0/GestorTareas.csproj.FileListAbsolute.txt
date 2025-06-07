@@ -642,10 +642,8 @@ C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\nezrqnk58p-muycvpuwrr.gz
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\v0zgfp0y55-87fc7y1x7t.gz
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
-C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\zdqb6p2oau-t3pkja1575.gz
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\efk9s2qsvz-61n19gt1b8.gz
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\4n5vtx8h9r-xtxxf3hu2r.gz
-C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\fnusmys8lk-jguk1nb7qu.gz
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\6ec5h9950f-bqjiyaj88i.gz
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\qwd9l9ymq4-c2jlpeoesf.gz
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\qxse7yd1oq-erw9l3u2r3.gz
@@ -722,3 +720,5 @@ C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\GestorTareas.pdb
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\GestorTareas.genruntimeconfig.cache
 C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\ref\GestorTareas.dll
+C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\zdqb6p2oau-av73haimmf.gz
+C:\Users\andra\Desktop\Proyectos\Dotnet\.net-projects\GestorTareas\obj\Debug\net9.0\compressed\fnusmys8lk-m5wuhc68q5.gz

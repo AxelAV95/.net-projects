@@ -260,3 +260,59 @@ class TareaManager {
 document.addEventListener('DOMContentLoaded', () => {
     new TareaManager();
 });
+
+// Funciones para eliminación directa
+class TareaEliminationManager {
+    constructor() {
+        this.initializeEliminationEvents();
+    }
+
+    initializeEliminationEvents() {
+        // Manejar eliminación con animación
+        document.addEventListener('submit', (e) => {
+            if (e.target.id === 'formEliminarTarea') {
+                this.handleEliminationSubmit(e);
+            }
+        });
+    }
+
+    handleEliminationSubmit(event) {
+        const form = event.target;
+        const submitButton = form.querySelector('button[type="submit"]');
+        
+        // Mostrar indicador de carga
+        const originalContent = submitButton.innerHTML;
+        submitButton.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Eliminando...';
+        submitButton.disabled = true;
+        
+        // Simular delay para mejor UX (opcional)
+        setTimeout(() => {
+            // El formulario se enviará normalmente
+        }, 500);
+    }
+
+    showEliminationSuccess(taskTitle) {
+        this.mostrarNotificacion(`¡Tarea "${taskTitle}" eliminada exitosamente!`, 'success');
+        
+        // Efecto visual de celebración
+        document.body.classList.add('elimination-success');
+        setTimeout(() => {
+            document.body.classList.remove('elimination-success');
+        }, 1000);
+    }
+
+    mostrarNotificacion(mensaje, tipo = 'info') {
+        // Usar la función existente del TareaManager
+        if (window.tareaManager && window.tareaManager.mostrarNotificacion) {
+            window.tareaManager.mostrarNotificacion(mensaje, tipo);
+        } else {
+            // Fallback básico
+            alert(mensaje);
+        }
+    }
+}
+
+// Inicializar cuando se carga la página
+document.addEventListener('DOMContentLoaded', () => {
+    window.eliminationManager = new TareaEliminationManager();
+});

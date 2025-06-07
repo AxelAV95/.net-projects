@@ -134,3 +134,99 @@ body {
         transform: none;
     }
 }
+
+/* Estilos para eliminación de tareas */
+.btn-eliminar-tarea {
+    transition: all 0.2s ease;
+}
+
+.btn-eliminar-tarea:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(220, 53, 69, 0.3);
+}
+
+/* Modal de eliminación */
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.modal-header.bg-danger {
+    border-bottom: none;
+}
+
+.modal-body .alert {
+    border-radius: 10px;
+}
+
+.modal-body .fa-trash-alt {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* Animación de éxito en eliminación */
+.elimination-success {
+    animation: successPulse 1s ease-in-out;
+}
+
+@keyframes successPulse {
+    0% { background-color: transparent; }
+    50% { background-color: rgba(40, 167, 69, 0.1); }
+    100% { background-color: transparent; }
+}
+
+/* Mejorar apariencia de alertas */
+.alert {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.alert-success {
+    background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+    color: #155724;
+}
+
+.alert-danger {
+    background: linear-gradient(135deg, #f8d7da 0%, #f1b0b7 100%);
+    color: #721c24;
+}
+
+/* Mejorar botones de acción */
+.btn-group .btn {
+    margin-right: 2px;
+}
+
+.btn-group .btn:last-child {
+    margin-right: 0;
+}
+
+/* Animación hover para botones de eliminar */
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+    transform: translateY(-1px);
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .btn-group {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn-group .btn {
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+    
+    .modal-dialog {
+        margin: 1rem;
+    }
+}

@@ -14,9 +14,9 @@ namespace MyApp.Namespace
     {
         private readonly AppDbContext _context;
         private readonly UserManager<IdentityUser> _userManager;
-          private readonly ILogger<IndexModel> _logger; 
+        private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(AppDbContext context, UserManager<IdentityUser> userManager,ILogger<IndexModel> logger)
+        public IndexModel(AppDbContext context, UserManager<IdentityUser> userManager, ILogger<IndexModel> logger)
         {
             _context = context;
             _userManager = userManager;
@@ -83,6 +83,37 @@ namespace MyApp.Namespace
             }
 
             return new JsonResult(new { success = true, completada = tarea?.Completada ?? false });
+        }
+
+        public async Task<IActionResult> OnPostEliminarAsync(int id)
+        {
+            var usuarioId = _userManager.GetUserId(User);
+
+            var tarea = await _context.Tareas
+                .FirstOrDefaultAsync(t => t.Id == id && t.UsuarioId == usuarioId);
+
+            if (tarea == null)
+            {
+                TempData["MensajeError"] = "La tarea no existe o no tienes permisos para eliminarla.";
+                return RedirectToPage();
+            }
+
+            try
+            {
+                _context.Tareas.Remove(tarea);
+                await _context.SaveChangesAsync();
+
+                _logger?.LogInformation("Tarea eliminada: {TareaId} por usuario {UsuarioId}", id, usuarioId);
+
+                TempData["MensajeExito"] = $"¡Tarea '{tarea.Titulo}' eliminada exitosamente!";
+            }
+            catch (Exception ex)
+            {
+                _logger?.LogError(ex, "Error al eliminar tarea {TareaId} para usuario {UsuarioId}", id, usuarioId);
+                TempData["MensajeError"] = "Error al eliminar la tarea. Inténtalo de nuevo.";
+            }
+
+            return RedirectToPage();
         }
     }
 }
