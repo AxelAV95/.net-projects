@@ -67,7 +67,7 @@
     <meta name="description" content="Gestor de Tareas Personales - Organiza tu vida, una tarea a la vez" />
     <meta name="author" content="Gestor de Tareas" />
     
-    <title>@ViewData["Title"] - Gestor de Tareas</title>
+    <title>@ViewData["Title"] - Gestor de tareas</title>
     
     <!-- Preconnect para mejor rendimiento -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
@@ -91,7 +91,7 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand fw-bold" asp-area="" asp-page="/Index">
-                    <i class="fas fa-clipboard-list text-primary"></i> Gestor de Tareas
+                    <i class="fas fa-clipboard-list text-primary"></i> Gestor de tareas
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" 
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,7 +108,7 @@
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-page="/Tareas/Index">
-                                    <i class="fas fa-tasks"></i> Mis Tareas
+                                    <i class="fas fa-tasks"></i> Mis tareas
                                 </a>
                             </li>
                         }
@@ -129,10 +129,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    &copy; @DateTime.Now.Year - Gestor de Tareas
+                    &copy; @DateTime.Now.Year - Gestor de tareas
                 </div>
                 <div class="col-md-6 text-end">
-                    <a asp-area="" asp-page="/Privacy" class="text-muted">Privacidad</a>
+                   
                     @if (User.Identity?.IsAuthenticated == true)
                     {
                         <span class="mx-2">|</span>
