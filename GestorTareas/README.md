@@ -1,10 +1,10 @@
-# 📋 Gestor de Tareas Personales
+# 📋 Gestor de tareas personales
 
 Una aplicación web completa para la gestión personal de tareas, desarrollada con ASP.NET Core y Razor Pages.
 
 ## 🚀 Características
 
-### Gestión de Tareas
+### Gestión de tareas
 - ✅ Crear, editar, eliminar y ver tareas
 - 📅 Fechas de vencimiento con alertas
 - 🎯 Sistema de prioridades (Baja, Media, Alta, Urgente)
@@ -13,7 +13,7 @@ Una aplicación web completa para la gestión personal de tareas, desarrollada c
 - ⏱️ Estimación de tiempo
 - 📝 Notas adicionales y URLs de referencia
 
-### Funcionalidades Avanzadas
+### Funcionalidades avanzadas
 - 🔍 Búsqueda y filtrado avanzado
 - 📊 Dashboard con estadísticas
 - 🔔 Notificaciones de tareas vencidas
@@ -26,7 +26,7 @@ Una aplicación web completa para la gestión personal de tareas, desarrollada c
 - 🔒 Validaciones del lado servidor y cliente
 - 👤 Aislamiento completo entre usuarios
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Tecnologías utilizadas
 
 - **Backend**: ASP.NET Core 8.0, Razor Pages
 - **Base de Datos**: SQL Server con Entity Framework Core
