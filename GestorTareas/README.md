@@ -49,9 +49,7 @@ Una aplicación web completa para la gestión personal de tareas, desarrollada c
    git clone [URL_DEL_REPOSITORIO]
    cd GestorTareas
 
-   1. **Restaurar paquetes**
-
-   ```bash
+   **Restaurar paquetes**
    dotnet restore
    ```
 
